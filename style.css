@@ -1,0 +1,160 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+
+ body {
+   height: 100vh;
+   display: flex;
+   background-color: aquamarine;
+ }
+ 
+ .memory-game {
+   width: 640px;
+   height: 640px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   perspective: 1000px;
+   margin-top: 110px;
+ }
+
+ .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(1, 69, 69, 0.3);
+    border-radius: 5px;
+     transform: scale(1);
+     transform-style: preserve-3d;
+     transition: transform .5s;
+ }
+
+  .front-face, 
+ .back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px; 
+  position: absolute;
+  border-radius: 5px;
+  background-color: #008b8b ; 
+  backface-visibility: hidden;
+}
+
+.front-face {
+   transform: rotateY(180deg);
+ }
+
+
+
+ .memory-card:active {
+     transform: scale(0.97);
+     transition: transform .2s;
+   }  
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.counter {
+  color: #fff;
+}
+
+#popup {
+  background-color:cornflowerblue;
+  width: 650px;
+  height: 500px;
+  border-radius: 10px;
+ position: absolute;
+ top:20%;
+ left: 33%;
+ transition: 2s;
+
+}
+
+.hidden {
+  display: none;
+
+}
+
+.close-icon {
+  width: 20px;
+  position: relative;
+  top: 10%;
+  left:90%;
+}
+.popup-results {
+  text-align: center;
+  margin: 80px;
+}
+
+p {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: crimson;
+
+}
+
+.steps {
+  font-size: 20px;
+  margin: 40px 0 40px;
+}
+
+.counter {
+  font-size: 25px;
+  color: mediumblue;
+}
+
+.btn {
+  height: 40px;
+  width: 130px;
+  background-color:darkorange;
+  border-style: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 400px;
+  position: absolute;
+  top: 90%;
+  left: 25%;
+
+}
+
+img {
+   width: 100px;
+}
+
+a {
+   font-size: 16px;
+   font-weight: 600;
+   text-decoration: none;
+   color: #171721;
+}
+.year {
+   font-size: 16px;
+   font-weight: 600;
+   color: #171721;
+}
+
+
+.number-moves {
+  display: flex;
+  font-size: 24px;
+  position: absolute;
+  top: 8%;
+  left: 33.4%;
+}
+
+.moves {
+   font-size: 26px;
+   margin-left: 5px;
+   color: blue;
+}

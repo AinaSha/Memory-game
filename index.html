@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Memory Game</title>
+</head>
+<body>
+   
+     <div class="number-moves">Number of moves: <span class="moves"> 0</span></div>
+     <div ><ol class="stat-list"></ol></div>
+   <section class="memory-game">
+      <div class="memory-card" data-framework="react">
+        <img class="front-face" src="img/react.svg" alt="React">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="react">
+        <img class="front-face" src="img/react.svg" alt="React">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="angular">
+        <img class="front-face" src="img/angular.svg" alt="Angular">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="angular">
+        <img class="front-face" src="img/angular.svg" alt="Angular">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="ember">
+        <img class="front-face" src="img/ember.svg" alt="Ember">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="ember">
+        <img class="front-face" src="img/ember.svg" alt="Ember">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="vue">
+        <img class="front-face" src="img/vue.svg" alt="Vue">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="vue">
+        <img class="front-face" src="img/vue.svg" alt="Vue">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="backbone">
+        <img class="front-face" src="img/backbone.svg" alt="Backbone">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="backbone">
+        <img class="front-face" src="img/backbone.svg" alt="Backbone">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="aurelia">
+        <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    
+      <div class="memory-card" data-framework="aurelia">
+        <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+        <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+      </div>
+    </section>
+
+    <div id="popup" class="hidden">
+      <div class="close-icon">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/>
+          </svg>
+      </div>
+      <div class="popup-results">
+         <p>Поздравляем!🥳</p>
+         <div class="steps">Количество ходов: <span class="counter">0</span></div>
+         <button class="btn">Повторить</button>
+      </div>
+    </div>
+
+    <footer>
+    
+      <div class="footer">
+         <a href="https://github.com/AinaSha" target="_blank">AinaSha</a>
+         <a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="logo"></a>
+         <span class="year">2022</span>
+      </div>
+   
+   </footer>
+   <script src="srcipt.js"></script>
+</body>
+</html>
